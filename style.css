@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    color: white;
+    background-color: black;
+}
+
+/*Scroll to top button*/
+.feedback {
+  background-color :palevioletred;
+  padding: 5px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  
+}  
+#mybutton {
+  margin-bottom: 20px;
+  position: fixed;
+  bottom: -4px;
+  right: 20px;
+}
+
+/*Header*/
+
+.logo{
+  margin-left: 40px;
+  font-size: x-large;
+  padding-top: 12px;
+  text-align: center;
+}
+.logo p{
+  color: palevioletred;
+}
+.logo p:hover{
+  font-size: 1.7rem;
+  background: -webkit-linear-gradient(#ffffff, #e50e59);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+ 
+  .navbar {
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navlist{
+      padding-right: 50px;
+  }
+  .navbar .navlist a:hover{
+      color:rgb(245, 131, 194);
+      font-size: 1.2rem;
+      transition: ease-in-out 0.2s;
+  }
+  
+
+  .navbar .icon {
+    display: none;
+color:white;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar a {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+/*-----------home---------*/
+.home{
+    display: flex;
+}
+.left , .right{
+min-height: 100vh;
+display: flex;
+align-items: center;
+}
+
+.left{
+    background-color: black;
+    width: 70%;
+    padding-left: 2rem;
+}
+.right{
+    background:linear-gradient(black ,rgb(206, 105, 139));
+    width: 30%;
+}
+/*icons*/
+.icons{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 1.5rem;
+}
+.icons .fa-brands , .fa-solid{
+    color: rgb(253, 182, 219);
+    font-size: 1.5rem;
+}
+.icons .fa-brands:hover , .fa-solid:hover{
+    font-size: 1.8rem;
+    cursor: pointer;
+    background: -webkit-linear-gradient(#ffffff, #e50e59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*home*/
+.content{
+    margin-left: 4.5rem;
+    width: 100%;
+}
+.content .intro{
+  font-size: 1.8rem;
+}
+.content .intro span{
+    color: #ff87b1;
+    font-weight: bold;
+}
+.content h1{
+    font-size: 2.3rem;
+    color:#e35788;
+    font-weight: bold;
+}
+.content p{
+    font-size: 1.1rem;
+    color: white;
+    max-width: 30rem;
+    margin: 1.5rem 0 2.5rem 0;
+    line-height: 1.8rem;
+}
+/*--buttons--*/
+
+.btn-container button a{
+  text-decoration: none;
+  color: black;
+}
+.btn-container button a:hover{
+  text-decoration: none;
+  color: palevioletred;
+}
+
+.btn-container button{
+border: .2rem solid palevioletred;
+padding: .7rem 1.2rem;
+border-radius: 0.5rem;
+cursor: pointer;
+}
+.btn-container button:nth-child(1){
+    background-color: palevioletred;
+    color: black;
+}
+.btn-container button:nth-child(2){
+    background-color: transparent;
+    color:palevioletred;
+    margin-left: 2rem;
+}
+.btn-container button:nth-child(1):hover{
+    background-color: transparent;
+    color: palevioletred;
+    transition: .4s ease;
+    width: 155px;
+}
+.btn-container button:nth-child(2):hover{
+    background-color: palevioletred;
+    color:black;
+    transition: .4s ease;
+    width: 110px;
+}
+
+/*----picture ring effect-----*/
+.design .circle{
+   aspect-ratio: 1;
+   position: absolute;
+   border-radius: 50%;
+   top: 60%;
+   left: 70%;
+   transform: translate(-50%,-50%);
+}
+.circle:nth-child(1){
+   background:linear-gradient(90deg , transparent 50%,black 50%);
+   width: 19rem;
+}
+.circle:nth-child(2){
+    background-image: url(./images/profilephoto.png);
+    background-size: 100%;
+    width: 16rem;
+    background-repeat: no-repeat;
+    border: .001rem solid white;
+    box-shadow:  0 0 1rem white,
+    inset 0 0 1rem white,
+    0 0 1.8rem rgb(251, 135, 154),
+    inset 0 0 1.8rem rgb(251, 135, 154),
+    0 0 3rem rgb(249, 150, 167),
+    inset  0 0 3rem rgb(249, 150, 167);
+}
+.circle:hover{
+    width: 17rem;
+}
+
+
+/*--------------------------about--------------------------*/
+
+.about .aboutimg{
+  
+    min-height: 100vh;
+    background-color: black;
+}
+.about .abouttext{
+    min-height: 100vh;
+    background-color: black;
+    padding-top: 50px;
+}
+.aboutimg .image{
+    margin: 130px 90px;
+align-items: center;
+justify-content: center;
+border-color: #65112e;
+border-top-left-radius: 10px;
+border-top-right-radius: 30%;
+border-bottom-left-radius: 30%;
+border-bottom-right-radius: 10px;
+box-shadow:  0 0 1rem white,
+    inset 0 0 1rem white,
+    0 0 1.5rem rgb(251, 135, 154),
+    inset 0 0 1.5rem rgb(251, 135, 154),
+    0 0 2rem rgb(249, 150, 167),
+    inset  0 0 2rem rgb(249, 150, 167);
+
+}
+.abouttext h1{
+    background: -webkit-linear-gradient(#ffffff, #e50e59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.abouttext .para{
+    padding-top: 10px;
+    width: 85%;
+    font-size: 1rem;
+}
+.abouttext .w3-bar{
+    padding-top: 10px;
+}
+
+.abouttext .w3-button{
+    background-image: linear-gradient(white 1%, palevioletred,rgb(233, 88, 136));
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+}
+.abouttext .w3-button:hover{
+    background-image: linear-gradient(palevioletred 80%,rgb(27, 26, 26));
+    transition: .4s ease;
+    width: 130px;
+    color: #000000;
+}
+.abouttext .btn2{
+    margin-left: 1rem;
+}
+
+ .exp1{
+    color: #e35788;
+    padding-top: 1rem;
+}
+ .exp2{
+    color: rgb(251, 220, 225);
+    font-size: 0.8rem;
+}
+
+/*---------------Skills Section---------------*/
+.skills{
+    background-color: #000000;
+    
+}
+.professional , .technical{
+    background-color: #000000;
+    min-height: 100vh;
+}
+.skills h1{
+    background: -webkit-linear-gradient(#ffffff, #e50e59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 2.3rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.skills .heading{
+    background: -webkit-linear-gradient(#ffffff, #e50e59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 1.5rem;
+}
+
+/*-----------technical skills(progress bars)---------*/
+.languages{
+      padding-top: 35px;
+      padding-left: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+ align-items: center;
+}
+.langname{
+    padding-top: 5px;
+    color: #e35788;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+.languages img:hover{
+    width: 80px;
+    transition: ease-out;
+}
+.progress{
+    width: 7.5rem;
+    height: 0.8rem;
+
+}
+.progress-bar{
+    background-color: palevioletred;
+    
+}
+
+/*-------------------professional skills(Circular Loader)------------------*/
+
+  
+  .pbar{
+    padding-left: 4rem;
+    padding-top: 32px;
+  }
+  .pskill{
+    font-size: 1rem;
+    padding-top: 5px;
+    color: #e86291;
+  }
+.progressCir {
+    width: 100px;
+    height: 100px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: #07070c;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 91, 148);
+  }
+  
+  .progressCir::after {
+    content: "%";
+  }
+  
+  .progressCir .title1 {
+    position: relative;
+    z-index: 100;
+  }
+  
+  .progressCir .overlay {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #07070c;
+  }
+  
+  .progressCir .left1,
+  .progressCir .right1 {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 8px solid rgb(243, 146, 183);
+    border-radius: 100px 0px 0px 100px;
+    border-right: 0;
+    transform-origin: right;
+  }
+  
+  .progressCir .left1 {
+    animation: load1 1s linear forwards;
+  }
+  
+  .progressCir:nth-of-type(2) .right1,
+  .progressCir:nth-of-type(3) .right1 {
+    animation: load2 0.5s linear forwards 1s;
+  }
+  
+  .progressCir:last-of-type .right1,
+  .progressCir:first-of-type .right1 {
+    animation: load3 0.8s linear forwards 1s;
+  }
+  
+  @keyframes load1 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  
+  @keyframes load2 {
+    0% {
+      z-index: 100;
+      transform: rotate(180deg);
+    }
+  
+    100% {
+      z-index: 100;
+      transform: rotate(270deg);
+    }
+  }
+  
+  @keyframes load3 {
+    0% {
+      z-index: 100;
+      transform: rotate(180deg);
+    }
+  
+    100% {
+      z-index: 100;
+      transform: rotate(315deg);
+    }
+  }
+
+ 
+  /*-------------------services--------------*/
+
+  .services{
+    background-color: #000000;
+    min-height: 100vh;
+}
+
+.services h1{
+    background: -webkit-linear-gradient(#ffffff, #e50e59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 2.3rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card-wrapper{
+  margin-top:80px;
+  padding-left: 50px;
+}
+
+  .flip-card {
+    background: #000000;
+    width: 260px;
+    height: 270px;
+    border: 1px solid black;  
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #000000;
+    color: rgb(255, 249, 249);
+    border: 0.5px #000000 ;
+    border-radius: 15px;
+    box-shadow: 0 0 0.5rem rgb(45, 45, 45),
+    inset 0 0 0.5rem rgb(35, 35, 35),
+    0 0 1rem rgb(238, 142, 158),
+    inset 0 0 1rem rgb(238, 142, 160);
+   
+  }
+
+  .flip-card-front img{
+    margin-top: 35px;
+    width: 120px;
+  }
+  .flip-card-front h2{
+    font-size: 1.1rem;
+    margin-top: 30px;
+    background: -webkit-linear-gradient(#ffffff, #e50e59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  .flip-card-back {
+    background-color: rgb(255, 165, 195);
+    color: rgb(0, 0, 0);
+    border: 0.5px #000000 ;
+    border-radius: 15px;
+    box-shadow: 0 0 0.5rem rgb(0, 0, 0),
+    inset 0 0 0.5rem rgb(0, 0, 0),
+    0 0 1rem rgb(0, 0, 0),
+    inset 0 0 1rem rgb(0, 0, 0);
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back p{
+    margin-top: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: black;
+  }
+  .flip-card-back button{
+    background-color: #000000;
+    color: palevioletred;
+    border-radius: 3rem;
+    width: 8rem;
+    height: 2.5rem;
+  }
+  .flip-card-back button:hover{
+    background-image: linear-gradient(rgb(235, 132, 161) 80%,rgb(22, 22, 22));
+    transition: .4s ease;
+    width: 8.2rem;
+    color: rgb(0, 0, 0);
+  }
+
+/*----------------------Projects Section--------------------*/
+.projects{
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+.projects h1{
+  background: -webkit-linear-gradient(#ffffff, #e50e59);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-align: center;
+padding-top: 20px;
+font-size: 2.3rem;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.projects .box{
+    margin-top: 60px;
+    margin-bottom: 30px;   
+    position: relative;
+    cursor: pointer;
+}
+
+.projects .box:hover .text{
+    visibility: visible;
+}
+    
+.projects .box:hover img{
+    transform: scale(1.0);
+}
+
+  .projects  .image img{
+    width: 310px;
+    height: 220px ;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: .5s ease-in-out;
+}
+
+ .projects .text{
+      border-radius: 15px;
+      font-size:small;
+      position: absolute;
+      top: 0;
+      left: 29px;
+      text-align: left;
+      background-color: rgba(250, 178, 201, 0.871);
+      width: 310px;
+      height: 220px;
+      color: rgb(0, 0, 0);
+      visibility: hidden;
+}
+
+.projects .text h2{
+        color: rgb(0, 0, 0);
+        padding-top: 20px;
+        padding-left: 40px;
+        font-size:large;
+        font-weight: bold;
+}
+
+.projects .text p{
+          color: rgb(0, 0, 0);
+          margin-top: 10px;
+          padding-left: 40px;
+          padding-right: 10px;
+          font-size: 12.5px;
+}
+
+.projects .text button{
+            color: rgb(250, 105, 170);
+            margin-left: 40px;
+            font-size: 15px;
+            font-weight: bold;
+            background-image: linear-gradient(to right, rgb(0, 0, 0) 80% , rgb(255, 180, 214));
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+ }
+
+ .projects .text button:hover{
+  color: rgb(0, 0, 0);
+  margin-left: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, rgb(247, 139, 179) 80% , rgb(0, 0, 0));
+  width: 110px;
+  height: 32px;
+  border-radius: 10px;
+}
+
+   /*----------------------contact---------------------*/
+   .contact{
+    background-color: #000000;
+    min-height: 100vh;
+    padding-top: 4rem;
+   }     
+            
+   .contact img{
+    margin-top: 1rem;
+    margin-left: 30px;
+    width: 400px;
+}
+.contact .msg{
+  padding-left: 20px;
+}
+.contact h1{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:xx-large;
+  font-weight:bold;
+  background: -webkit-linear-gradient(#ffffff, #e50e59);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  padding-left: 30px;
+  margin-bottom: 35px;
+}
+.contact .inputs{
+  margin-top: 10px;
+  padding-right: 60px;
+  padding-left:30px;
+}
+
+.contact .contactbtn button{
+  margin-top: 25px;
+  margin-left: 30px;
+  text-align: center;
+  width: 9.5rem;
+  height: 3rem;
+  color: black;
+  background-image: linear-gradient(to right, rgb(250, 98, 154) , rgb(250, 172, 202),rgb(250, 100, 155));
+}
+.contact .contactbtn button:hover{
+  width: 10rem;
+  transition: ease-in-out;
+}
+
+.copyright{
+  background-color: black;
+  color: palevioletred;
+  
+}
+
+
+
+
+
+
+

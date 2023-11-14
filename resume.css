@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    min-height: 800px;
+    background: white;
+    margin: 50px;
+    box-shadow: 0 25px 25px rgb(245, 116, 138);
+}
+.top{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background:linear-gradient(45deg,black 60% ,rgb(206, 105, 139));
+    padding: 50px;
+    color: white;
+}
+h2{
+    font-size: 2.2em;
+    text-transform: uppercase;
+    line-height: 0.9em;
+    letter-spacing: 0.1em;
+}
+h2 span{
+    font-size: 0.5em;
+    font-weight: 400;
+}
+.group{
+    position: relative;
+    display: grid;
+    gap: 40px;
+    width: 100%;
+    grid-template-columns: 2fr 3fr;
+}
+.group .img{
+    position: relative;
+    width: 100%;
+}
+.group img{
+    width: 200px;
+    border-radius: 50%;
+}
+.group p{
+    font-size: 0.8em;
+    font-weight: 200;
+}
+.bottom{
+    position: relative;
+    display: grid;
+    margin: 50px 35px 0;
+    gap: 40px;
+    grid-template-columns: 2fr 3fr;
+}
+.bottom .bleft{
+    margin-top: 20px;
+}
+h3{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: white;
+    background: linear-gradient(black,palevioletred);
+    font-weight: 600;
+    padding: 0 15px;
+    display: inline-flex;
+}
+.contactinfo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 15px 0;
+}
+.contactinfo li{
+list-style: none;
+}
+.contactinfo li .icon{
+    color: rgb(177, 67, 104);
+}
+.contactinfo li .text{
+    padding-left: 10px;
+    font-size: 0.8em;
+}
+.contactinfo li a{
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+}
+
+.skills{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+.skills .skillsBox{
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 3fr;
+}
+.skills .skillsBox p{
+    font-size: 0.8em;
+    font-weight: 200;
+    color: black;
+}
+.skills .skillsBox .value{
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background: white;
+}
+.skills .skillsBox .value::before{
+    content: '';
+    position: absolute;
+    width: var(--i);
+    height: 100%;
+    background: rgb(177, 67, 104);
+}
+
+.bright{
+    margin-top: -50px;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 3px;
+    border-color:rgb(177, 67, 104);
+    border-style: groove;
+   padding-left: 20px;
+}
+.bright .adjmargin{
+margin-top: 30px;
+}
+.education{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.education .eduBox{
+    padding-top: 15px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.eduBox p{
+font-size: 0.7em;
+}
+
+.experience ul{
+    margin-top: 12px;
+    margin-left: 30px;
+}
+.experience li{
+    margin-top: 8px;
+    font-size: 0.9em;
+}
+.projects .row{
+    display: flex;
+}
+.projects .col ul{
+    list-style:square;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.projects .col li{
+    font-size: 0.9rem;
+    margin-top: 8px;
+}

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=”stylesheet” href=”css/bootstrap.css”>
+    <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+    <link rel="stylesheet" href="style.css">
+    <title>Sidra||Portfolio Website</title>
+</head>
+<body>
+<!--jump to top button-->
+<div id="mybutton" >
+  <button class="feedback" onclick="jumpToTop()"><i class='fas fa-level-up-alt'></i></button>
+  </div>
+  <!--header-->
+  <div class="navbar" id="myNavbar">
+    <div class="logo"><p>SIDRA <span style="color: white;">KHALID</span></p></div>
+    <div class="navlist">
+      <a href="#">Home</a>
+      <a href="#" onclick="jumpToAbout()">About</a>
+      <a href="#" onclick="jumpToSkills()">Skills</a>
+      <a href="#" onclick="jumpToServices()">Services</a>
+      <a href="#" onclick="jumpToProjects()">Projects</a>
+      <a href="#" onclick="jumpToContact()">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+
+<section class="home">
+    <!--left container-->
+   <div class="left">
+    <!-- social icons-->
+        <div class="icons">
+               <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+               <a href="https://www.linkedin.com/in/sidra-khalid-9a2b41289/"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+               <a href=""><i class="fa-solid fa-envelope" ></i></a>
+       </div>
+       <!--home main content-->
+       <div class="content">
+           <h2 class="intro">Hi I'm <span>Sidra Khalid</span></h2>
+           <h1>Web Developer</h1>
+           <p>Feel Free to reach Out to me if you want Professional Web Developer , WordPress Developer or to talk about emerging tech trends and elevate your bussiness.</p>
+           <div class="btn-container">
+               <button><a href="resume.html" target="_blank">View Resume</a></button>
+               <button>Hire Me</button>
+           </div>
+       </div>
+   </div>
+<!--right container-->
+   <div class="right">
+
+   </div>
+<!-----ring light effect----->
+   <div class="design">
+    <div class="circle"></div>
+    <div class="circle"></div>
+   </div>
+
+</section>
+
+
+<!----------------About Section-------------->
+<section class="about" id="about">
+<div class="row">
+
+    <div class="aboutimg col-lg-5 col-sm-12">
+      <div class="image">
+        <img src="./images/aboutimg.png" alt="aboutimage" width="90%">
+      </div>
+    </div>
+
+    <div class="abouttext col-lg-7 col-sm-12 " style=" animation-duration: 4s;">
+        <h1>About Me</h1>
+        <p class="para">I am Sidra Khalid actively looking for an oppurtunity in the field of Website Development.I am a well-rounded individual with a passion for technology and a strong work ethic. I am always eager to learn new things and am always looking for ways to improve my skills. I am also a team player and enjoy collaborating with others to achieve common goals.I take pride in exceeding client's expectations and delivering project on time. </p>
+   
+        <!---------------------------tab button bar------------------------------>
+        <div class="w3-bar">
+            <button class="w3-bar-item w3-button btn1" onclick="openTab('Education')">Education</button>
+            <button class="w3-bar-item w3-button btn2" onclick="openTab('Experience')">Experience</button>
+            <button class="w3-bar-item w3-button btn2" onclick="openTab('Certificates')">Certificates</button>
+        </div>
+
+
+            <div id="Education" class="w3-container tab" >
+                <div class="exp1">The Islamia University Bahawalpur - 2021-2025</div>
+                    <div class="exp2">Currently Enrolled in BS Software Engineering (5th Semester)</div>
+                    <div class="exp1">APS&CS Noor Mahal Campus Bahawalpur - 2019-2021</div>
+                    <div class="exp2">Scored 90% in F.Sc Pre-Engineering</div>
+                    <div class="exp1">Federal Govt. School Rawalpindi</div>
+                    <div class="exp2">Scored 93% Marks in Matric(Science Group)</div>
+              </div>
+
+
+            <div id="Experience" class="w3-container tab" style="display:none">
+                <div class="exp1">Internship at CodSoft</div>
+                <div class="exp2">15-Oct-2023 to 15-Nov-2023</div>
+                <div class="exp1">Internship at Brain Tech</div>
+                <div class="exp2">Sep 2023 - Present</div>
+                <div class="exp1">Developed Projects Included in Curriculum</div>
+            </div>
+
+            <div id="Certificates" class="w3-container tab" style="display:none">
+                <div class="exp1">Diploma in Web Technology</div>
+                <div class="exp2">Brain Inspire Software House</div>
+                <div class="exp1">Certification In WordPress Development Short Course</div>
+                <div class="exp2">By LWE</div>
+                <div class="exp1">2days Hands-on Workshop -</div>
+                <div class="exp2"> IUB Freelancing Society</div>
+                <div class="exp1">Basic Computer Course</div>
+                <div class="exp2">Noor College Rawalpindi</div>
+
+            </div>
+      
+          </div> 
+
+    </div>
+</section>
+
+
+<!------------------------Skills Section-------------------------->
+
+<section class="skills" id="skills">
+
+    <h1> Areas Of Expertise</h1>
+
+<div class="row">
+
+        <div class="technical col-lg-6 col-sm-12 container">
+            <div class="heading">Technical Skills</div>
+           
+            <div class="languages row">
+                <div class="html col">
+                    <img src="./images/html.png" alt="html" width="70px">
+                    <div class="langname">HTML</div>
+                    <div class="progress" >
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%"></div>
+                      </div>
+                </div>
+
+                <div class="css col">
+                    <img src="./images/css.png" alt="html" width="70px">
+                    <div class="langname">CSS</div>
+                    <div class="progress" >
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
+                      </div>
+                </div>
+
+                <div class="bootstrap col">
+                    <img src="./images/bootstrap.png" alt="html" width="70px">
+                    <div class="langname">Bootstrap</div>
+                    <div class="progress" >
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
+                      </div>
+                </div>
+            </div>
+            
+            <div class="languages row">
+                <div class="JS col">
+                    <img src="./images/Javascript.png" alt="html" width="70px">
+                    <div class="langname">JavaScript</div>
+                    <div class="progress" >
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%"></div>
+                      </div>
+                </div>
+
+                <div class="C++ col">
+                    <img src="./images/c++.png" alt="html" width="70px">
+                    <div class="langname">C++</div>
+                    <div class="progress" >
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                      </div>
+                </div>
+
+                <div class="sql col">
+                    <img src="./images/sql.png" alt="html" width="70px">
+                    <div class="langname">SQL</div>
+                    <div class="progress" >
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 78%"></div>
+                      </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="professional col-lg-6 col-sm-12">
+            <div class="heading">Professional Skills</div>
+         <div>
+            <div class="loader row">
+                <div class="col pbar">
+                        <div class="progressCir">
+                            <span class="title1 timer" data-from="0" data-to="85" data-speed="1800">85</span>
+                            <div class="overlay"></div>
+                            <div class="left1"></div>
+                            <div class="right1"></div>
+                        </div>
+                       <div class="pskill">Problem-Solving</div>
+                 </div>
+                
+
+                 <div class="col pbar">
+                         <div class="progressCir">
+                             <span class="title1 timer" data-from="0" data-to="70" data-speed="1500">80</span>
+                             <div class="overlay"></div>
+                            <div class="left1"></div>
+                           <div class="right1"></div>
+                        </div>
+                        <div class="pskill">Communication</div>
+                  </div>
+               </div><!---row1 ends-->
+
+
+                <div class="loader row">
+                    <div class="col pbar">
+                          <div class="progressCir">
+                             <span class="title1 timer" data-from="0" data-to="70" data-speed="1500">80</span>
+                             <div class="overlay"></div>
+                               <div class="left1"></div>
+                              <div class="right1"></div>
+                          </div>
+                          <div class="pskill" style="padding-left: 10px;">Teamwork</div>
+                    </div>
+
+                    <div class="col pbar">
+                           <div class="progressCir ">
+                               <span class="title1 timer" data-from="0" data-to="85" data-speed="1800">85</span>
+                                 <div class="overlay"></div>
+                               <div class="left1"></div>
+                               <div class="right1"></div>
+                           </div>
+                           <div class="pskill">Time Management</div>
+                    </div>
+         </div><!--row2 ends-->
+         </div><!---container ends-->
+</div><!---professional skills div ends-->
+   
+</div><!----skills row ends-->
+</section>
+
+
+
+<section class="services" id="services">
+
+    <h1>Services</h1>
+
+    <div class="row ">
+        <div class="card-wrapper col-lg-4 col-sm-12 ">
+            <!----flipcard-->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./images/webdev.png" alt="web development">
+                    <h2>Web Development</h2>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Specialized in crafting responsive and user-centric websites that not only look stunning but also perform seamlessly, helping your business thrive online.</p>
+                    <button>Get Started</button>
+                  </div>
+                </div>
+             </div>
+        </div>
+              <!-----flipcard end-->
+
+              <div class="card-wrapper col-lg-4 col-sm-12">
+                <!----flipcard-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="./images/graphicdesigning.png" alt="Avatar" >
+                        <h2>Graphic Designing</h2>
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Elevate your brand with expert Graphic design services, where innovative design meets your unique vision to create compelling visuals and stunning impressions.</p>
+                        <button>Get Started</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+                  <!-----flipcard end-->
+
+                  <div class="card-wrapper col-lg-4 col-sm-12">
+                    <!----flipcard-->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./images/digitalmarketing.png" alt="Avatar">
+                            <h2>Digital Marketing</h2>
+                          </div>
+                          <div class="flip-card-back">
+                            <p>Well-versed in driving online success through tailored digital marketing strategies that boost your brand's visibility and engagement to achieve online success.</p>
+                            <button>Get Started</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                      <!-----flipcard end-->
+
+        </div>
+    </div>
+</section>
+
+
+<section class="projects" id="projects">
+    <h1>Gain Insight Into My Projects</h1>
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-12 w3-center box">
+          <div class="image">
+          <img src="./images/bussinessagency.png" width="300px" height="305px">
+      </div>
+
+      <div class="text">
+          <h2>Bussiness Agency website</h2>
+          <p>Bussiness Agency Website covers all the elements which helps your business thrive online.It's not just business; it's a partnership for success.We're here to make it happen.</p>
+          <button>Details</button>
+      </div>
+  </div>
+
+  <div class="col-lg-4 col-sm-12 w3-center box">
+      <div class="image">
+      <img src="./images/real estate.png" width="300px">
+  </div>
+
+  <div class="text">
+      <h2>Real Estate Website</h2>
+      <p>Presenting y'all a Real Estate Website,Where every frame tells a story.It simplifies search for properties & investments, providing gateway to new opportunities & informed decisions.🏠🎥</p>
+      <button>Details</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-sm-12 w3-center box">
+  <div class="image">
+  <img src="./images/restaurant.jpg" width="300px">
+  </div>
+
+  <div class="text">
+  <h2>Restaurant Website</h2>
+  <p>This Restaurant website Indulge in Culinary Excellence! Explore Restaurant's Online Oasis  which presents everything From our exquisite menu to the inviting ambiance,experience dining redefined.</p>
+  <button>Details</button>
+  </div>
+</div>
+
+
+<div class="col-lg-4 col-sm-12 w3-center box" >
+  <div class="image">
+  <img src="./images/medicalweb.png" width="300px">
+  </div>
+
+  <div class="text">
+  <h2>Medical Website</h2>
+  <p>Your Health is Our Priority! Dive into our Medical Center's Virtual Hub. Explore all departments & services, stay informed with informative blogs & plan your visit with our hospital schedule.Your well-being, simplified.</p>
+  <button>Details</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-sm-12 w3-center box" >
+  <div class="image">
+  <img src="./images/educationweb.png" width="300px">
+  </div>
+
+  <div class="text">
+  <h2>Education Website</h2>
+  <p> Shaping Future Healers! This website is your gateway to a world-class education.Explore programs, faculty expertise, and commitment to nurturing the next generation of professionals.</p>
+  <button>Details</button>
+  </div>
+</div>
+
+<div class="col-lg-4 col-sm-12 w3-center box">
+  <div class="image">
+  <img src="./images/netflixclone.jpg" width="300px" height="300">
+  </div>
+
+  <div class="text">
+  <h2>Netflix Clone</h2>
+  <p>Lights, Camera, Stream! Dive into my Netflix Clone website for world of binge-worthy entertainment. Explore vast library of movies & TV shows, enjoy seamless streaming & experience magic of cinema from your screen.
+  </p>
+  <button>Details</button>
+  </div>
+</div>
+
+
+  </div>
+
+</section>
+
+
+<!--------------------contact section-------------->
+
+<section class="contact" id="contact">
+  <div class="row">
+    <div class="col-lg-6 col-sm-12 w3-center conimg">
+      <img src="./images/contact-us.png"  alt="get in touch">
+   </div>
+
+     <div class="col-lg-6 col-sm-12 msg">
+    
+       <h1>Get in touch with Us</h1>
+       <form action="https://formsubmit.co/youraddress@gmail.com" method="POST">
+       <div class="inputs">
+        <input type="text" class="form-control" id="exampleFormControlInput1 fname" placeholder="First Name" name="First Name" required>
+      </div>
+
+      <div class="inputs">
+        <input type="text" class="form-control" id="exampleFormControlInput1 lname" placeholder="Last Name" name="Last Name" required>
+      </div>
+      <div class="inputs">
+        <input type="email" class="form-control" id="exampleFormControlInput1 emailID" placeholder="Write Your Email Here" name="Email" required>
+      </div>
+      <div class="inputs">
+        <input type="text" class="form-control" id="exampleFormControlInput1 help" placeholder="I would like to discuss" name="Subject" required>
+      </div>
+      <div class="inputs">
+        <textarea class="form-control" type="message" id="exampleFormControlTextarea1 comment" rows="3" placeholder="Comments" name="Comment" required></textarea>
+      </div>
+      <div class="contactbtn">
+          <button  class="w3-btn w3-round-large" type="submit"><b>Send Message</b></button>
+      </div>
+      <input type="hidden" name="_subject" value="New submission!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+    </form>
+    </div>
+  </div>
+  </div>
+</section>
+<div class="copyright w3-center">
+  <p>© 2023 sidra. All Right Reserved.</p>
+</div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+ 
+    
+</body>
+</html>
